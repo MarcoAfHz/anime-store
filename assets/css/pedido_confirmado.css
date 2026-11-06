@@ -1,0 +1,105 @@
+/* ── PEDIDO CONFIRMADO ───────────────────────────────────────── */
+.sp-confirmado-header {
+    text-align:    center;
+    margin-bottom: 40px;
+}
+
+.sp-confirmado-icon {
+    width:           72px;
+    height:          72px;
+    background:      rgba(29,158,117,0.15);
+    border:          2px solid var(--success);
+    border-radius:   50%;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    margin:          0 auto 20px;
+    font-size:       32px;
+    color:           var(--success);
+}
+
+.sp-confirmado-header h1 {
+    font-family:   var(--font-titulo);
+    font-size:     32px;
+    font-weight:   700;
+    color:         var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.sp-confirmado-header p {
+    font-size: 15px;
+    color:     var(--text-secondary);
+}
+
+.sp-confirmado-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap:     28px;
+    align-items: start;
+}
+
+/* Yape */
+.sp-confirmado-yape { text-align: center; }
+.sp-confirmado-yape p { font-size: 14px; color: var(--text-secondary); margin-bottom: 16px; }
+
+.sp-yape-numero {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    gap:             10px;
+    background:      var(--accent-soft);
+    border:          1px solid rgba(232,93,36,0.3);
+    border-radius:   var(--radius-md);
+    padding:         16px;
+    margin-bottom:   16px;
+}
+
+.sp-yape-numero i    { font-size: 24px; color: var(--accent); }
+.sp-yape-numero span { font-family: var(--font-titulo); font-size: 24px; font-weight: 700; color: var(--text-primary); letter-spacing: 2px; }
+
+.sp-yape-instruccion {
+    font-size:     13px;
+    color:         var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.sp-yape-aviso {
+    display:       flex;
+    align-items:   flex-start;
+    gap:           8px;
+    background:    rgba(239,159,39,0.1);
+    border:        1px solid rgba(239,159,39,0.3);
+    border-radius: var(--radius-sm);
+    padding:       10px 12px;
+    font-size:     12px;
+    color:         var(--warning);
+}
+
+/* Efectivo */
+.sp-confirmado-efectivo {
+    text-align: center;
+    padding:    16px;
+}
+
+.sp-confirmado-efectivo i  { font-size: 40px; color: var(--success); display: block; margin-bottom: 12px; }
+.sp-confirmado-efectivo p  { font-size: 14px; color: var(--text-secondary); margin-bottom: 8px; }
+
+/* Envío */
+.sp-confirmado-envio { display: flex; flex-direction: column; gap: 10px; }
+
+.sp-confirmado-envio p {
+    display:     flex;
+    align-items: center;
+    gap:         10px;
+    font-size:   14px;
+    color:       var(--text-secondary);
+}
+
+.sp-confirmado-envio i { color: var(--accent); font-size: 16px; }
+
+.sp-confirmado-btns { margin-top: 4px; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .sp-confirmado-layout { grid-template-columns: 1fr; }
+}

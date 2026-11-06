@@ -1,0 +1,44 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# ── CARPETAS Y ARCHIVOS INTERNOS — no accesibles desde el navegador ──
+RewriteRule ^(config|database|includes|admin/includes)(/|$) - [F,L]
+<FilesMatch "\.(sql|log|ini|bak|md)$">
+    Require all denied
+</FilesMatch>
+
+# ── PÁGINAS PÚBLICAS ───────────────────────────────────────────
+RewriteRule ^catalogo/?$              pages/catalogo.php          [L,QSA]
+RewriteRule ^producto/?$              pages/producto.php          [L,QSA]
+RewriteRule ^carrito/?$               pages/carrito.php           [L,QSA]
+RewriteRule ^checkout/?$              pages/checkout.php          [L,QSA]
+RewriteRule ^mi-cuenta/?$             pages/mi-cuenta.php         [L,QSA]
+RewriteRule ^wishlist/?$              pages/wishlist.php          [L,QSA]
+RewriteRule ^login/?$                 pages/login.php             [L,QSA]
+RewriteRule ^registro/?$              pages/registro.php          [L,QSA]
+RewriteRule ^pedido-confirmado/?$     pages/pedido-confirmado.php [L,QSA]
+RewriteRule ^logout/?$                pages/logout.php            [L,QSA]
+RewriteRule ^terminos/?$              pages/terminos.php          [L,QSA]
+RewriteRule ^privacidad/?$            pages/privacidad.php        [L,QSA]
+
+# ── PANEL ADMIN ────────────────────────────────────────────────
+RewriteRule ^admin/?$                 admin/index.php             [L,QSA]
+RewriteRule ^admin/productos/?$       admin/productos.php         [L,QSA]
+RewriteRule ^admin/pedidos/?$         admin/pedidos.php           [L,QSA]
+RewriteRule ^admin/usuarios/?$        admin/usuarios.php          [L,QSA]
+RewriteRule ^admin/cupones/?$         admin/cupones.php           [L,QSA]
+RewriteRule ^admin/categorias/?$      admin/categorias.php        [L,QSA]
+RewriteRule ^admin/banners/?$         admin/banners.php           [L,QSA]
+
+# ── API ────────────────────────────────────────────────────────
+RewriteRule ^api/auth/?$              api/auth.php                [L,QSA]
+RewriteRule ^api/carrito/?$           api/carrito.php             [L,QSA]
+RewriteRule ^api/wishlist/?$          api/wishlist.php            [L,QSA]
+RewriteRule ^api/productos/?$         api/productos.php           [L,QSA]
+RewriteRule ^api/yape/?$              api/yape.php                [L,QSA]
+RewriteRule ^api/resenas/?$           api/resenas.php             [L,QSA]
+RewriteRule ^api/cuenta/?$            api/cuenta.php              [L,QSA]
+
+# ── PÁGINA 404 ─────────────────────────────────────────────────
+ErrorDocument 404 /pages/404.php

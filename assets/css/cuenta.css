@@ -1,0 +1,211 @@
+/* ── MI CUENTA ───────────────────────────────────────────────── */
+.sp-cuenta-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap:     28px;
+    align-items: start;
+}
+
+/* Sidebar cuenta */
+.sp-cuenta-sidebar {
+    background:    var(--bg-card);
+    border:        1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding:       24px;
+    position:      sticky;
+    top:           calc(var(--nav-h) + 16px);
+    text-align:    center;
+}
+
+.sp-cuenta-avatar {
+    width:           72px;
+    height:          72px;
+    border-radius:   50%;
+    background:      var(--accent-soft);
+    color:           var(--accent);
+    font-family:     var(--font-titulo);
+    font-size:       28px;
+    font-weight:     700;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    margin:          0 auto 12px;
+    border:          2px solid rgba(232,93,36,0.3);
+}
+
+.sp-cuenta-nombre {
+    font-size:     15px;
+    font-weight:   600;
+    color:         var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.sp-cuenta-email {
+    font-size:     12px;
+    color:         var(--text-muted);
+    margin-bottom: 20px;
+    word-break:    break-all;
+}
+
+.sp-cuenta-nav {
+    display:       flex;
+    flex-direction: column;
+    gap:           4px;
+    text-align:    left;
+}
+
+.sp-cuenta-nav a {
+    display:       flex;
+    align-items:   center;
+    gap:           10px;
+    padding:       10px 12px;
+    border-radius: var(--radius-sm);
+    font-size:     13px;
+    color:         var(--text-secondary);
+    transition:    var(--transition);
+    position:      relative;
+}
+
+.sp-cuenta-nav a:hover,
+.sp-cuenta-nav a.active {
+    color:      var(--accent);
+    background: var(--accent-soft);
+}
+
+.sp-cuenta-nav a i { font-size: 16px; width: 18px; }
+
+.sp-cuenta-badge {
+    margin-left:   auto;
+    background:    var(--accent);
+    color:         #fff;
+    font-size:     10px;
+    font-weight:   700;
+    padding:       2px 7px;
+    border-radius: 10px;
+}
+
+.sp-cuenta-logout {
+    margin-top:   8px;
+    border-top:   1px solid var(--border);
+    padding-top:  12px !important;
+    color:        var(--text-muted) !important;
+}
+
+.sp-cuenta-logout:hover { color: var(--error) !important; background: rgba(226,75,74,0.1) !important; }
+
+/* Pedidos */
+.sp-pedidos-lista { display: flex; flex-direction: column; gap: 10px; }
+
+.sp-pedido-card {
+    background:    var(--bg-secondary);
+    border:        1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow:      hidden;
+    cursor:        pointer;
+    transition:    var(--transition);
+}
+
+.sp-pedido-card:hover { border-color: var(--accent); }
+
+.sp-pedido-header {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    padding:         14px 16px;
+    flex-wrap:       wrap;
+    gap:             8px;
+}
+
+.sp-pedido-codigo {
+    font-family:  var(--font-titulo);
+    font-size:    14px;
+    font-weight:  700;
+    color:        var(--text-primary);
+    display:      block;
+    letter-spacing: 0.5px;
+}
+
+.sp-pedido-fecha {
+    font-size: 12px;
+    color:     var(--text-muted);
+    display:   block;
+}
+
+.sp-pedido-total {
+    font-family: var(--font-titulo);
+    font-size:   16px;
+    font-weight: 700;
+    color:       var(--accent);
+}
+
+.sp-pedido-chevron { transition: transform 0.2s ease; color: var(--text-muted); }
+
+.sp-pedido-detalle {
+    padding:    0 16px 16px;
+    border-top: 1px solid var(--border);
+}
+
+.sp-pedido-info {
+    display:   flex;
+    gap:       16px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size:  12px;
+    color:      var(--text-muted);
+}
+
+.sp-pedido-info span { display: flex; align-items: center; gap: 6px; }
+.sp-pedido-info i    { color: var(--accent); }
+
+/* Estados pedido */
+.sp-estado {
+    font-size:     11px;
+    font-weight:   600;
+    padding:       3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+.sp-estado-pendiente   { background: rgba(239,159,39,0.15);  color: var(--warning); }
+.sp-estado-confirmado  { background: rgba(29,158,117,0.15);  color: var(--success); }
+.sp-estado-enviado     { background: rgba(55,138,221,0.15);  color: #378add; }
+.sp-estado-entregado   { background: rgba(29,158,117,0.15);  color: var(--success); }
+.sp-estado-cancelado   { background: rgba(226,75,74,0.15);   color: var(--error); }
+
+/* Responsive cuenta */
+@media (max-width: 992px) {
+    .sp-cuenta-layout { grid-template-columns: 1fr; }
+    .sp-cuenta-sidebar { position: static; text-align: left; }
+    .sp-cuenta-avatar  { margin: 0 0 12px; }
+}
+
+@media (max-width: 576px) {
+    .sp-pedido-header { flex-direction: column; align-items: flex-start; }
+}
+
+
+.sp-cuenta-content .sp-checkout-bloque input,
+.sp-cuenta-content .sp-checkout-bloque select,
+.sp-cuenta-content .sp-checkout-bloque textarea {
+    width:         100%;
+    background:    var(--bg-secondary);
+    border:        1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding:       10px 14px;
+    font-size:     14px;
+    color:         var(--text-primary);
+    outline:       none;
+    transition:    var(--transition);
+    font-family:   var(--font-body);
+    appearance:    none;
+    -webkit-appearance: none;
+}
+
+.sp-cuenta-content .sp-checkout-bloque input:focus,
+.sp-cuenta-content .sp-checkout-bloque select:focus,
+.sp-cuenta-content .sp-checkout-bloque textarea:focus {
+    border-color: var(--accent);
+    box-shadow:   0 0 0 3px var(--accent-soft);
+}
