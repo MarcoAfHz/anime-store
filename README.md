@@ -1,4 +1,4 @@
-# ShopPeruvian
+# Anime Store
 
 Tienda online de ropa y accesorios de anime para Perú. Los clientes filtran el catálogo por categoría, precio y talla, guardan favoritos, aplican cupones y pagan con Yape subiendo su comprobante. La tienda gestiona productos, pedidos, cupones, banners y usuarios desde un panel de administración.
 
@@ -39,8 +39,8 @@ Tienda online de ropa y accesorios de anime para Perú. Los clientes filtran el 
 
 1. Clonar el repositorio en la carpeta del servidor web (Laragon, XAMPP…), con `mod_rewrite` activo:
    ```bash
-   git clone https://github.com/MarcoAfHz/shop-peruvian.git
+   git clone https://github.com/MarcoAfHz/anime-store.git
    ```
-2. Crear una base de datos MySQL e importar `database/shop_peruvian.sql`.
-3. Revisar la conexión en `config/database.php` y la URL de la tienda en `config/config.php`.
+2. Crear una base de datos MySQL e importar `database/anime_store.sql`.
+3. Revisar la conexión en `config/database.php` y los datos de la tienda en `config/config.php`. La URL base se detecta sola.
 4. Abrir la web y entrar al panel en `/admin`.

@@ -3,7 +3,7 @@
 define('DB_HOST',     'localhost');
 define('DB_USER',     'root');        // en XAMPP por defecto es root
 define('DB_PASS',     '');            // en XAMPP por defecto está vacío
-define('DB_NAME',     'shop_peruvian');
+define('DB_NAME',     'anime_store');
 define('DB_CHARSET',  'utf8mb4');
 
 function conectar() {

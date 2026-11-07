@@ -1,21 +1,21 @@
 <?php
 
 // ── URL base del proyecto ──────────────────────────────────────
-// En local con Laragon:
-define('BASE_URL', 'http://shop-peruvian.test');
-// En producción (Hostinger) cambia a:
-// define('BASE_URL', 'https://www.shopperuvian.com');
+// Se toma del dominio con el que se abre la web (Laragon, XAMPP o producción).
+// Si hace falta fijarla, por ejemplo: define('BASE_URL', 'https://www.animestore.pe');
+$esquema = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+define('BASE_URL', $esquema . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost'));
 
 // ── Nombre y datos de la tienda ────────────────────────────────
-define('TIENDA_NOMBRE',    'ShopPeruvian');
-define('TIENDA_EMAIL',     'admin@shopperuvian.com');
+define('TIENDA_NOMBRE',    'Anime Store');
+define('TIENDA_EMAIL',     'admin@animestore.pe');
 define('TIENDA_TELEFONO',  '+51 999 999 999');
 define('TIENDA_DIRECCION', 'Lima, Perú');
 define('TIENDA_MONEDA',    'S/');
 
 // ── Yape ───────────────────────────────────────────────────────
 define('YAPE_NUMERO',      '999 999 999');
-define('YAPE_TITULAR',     'ShopPeruvian');
+define('YAPE_TITULAR',     'Anime Store');
 
 // ── Rutas de archivos ──────────────────────────────────────────
 define('ROOT_PATH',        dirname(__DIR__));
@@ -31,7 +31,7 @@ define('IMG_DEFAULT',      BASE_URL  . '/assets/img/no-imagen.png');
 define('PRODUCTOS_POR_PAGINA', 12);
 
 // ── Sesión ─────────────────────────────────────────────────────
-define('SESSION_NOMBRE', 'shop_peruvian_session');
+define('SESSION_NOMBRE', 'anime_store_session');
 
 // ── Entorno ────────────────────────────────────────────────────
 // 'development' muestra errores | 'production' los oculta

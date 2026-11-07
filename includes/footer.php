@@ -9,7 +9,7 @@
         <!-- Columna 1 — Logo y descripción -->
         <div class="sp-footer-col">
             <a href="<?= BASE_URL ?>" class="sp-logo sp-footer-logo">
-                SHOP<span>PERUVIAN</span>
+                ANIME<span>STORE</span>
             </a>
             <p class="sp-footer-desc">
                 Importaciones anime y urban style. Productos exclusivos con envíos a todo Perú.

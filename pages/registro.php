@@ -9,13 +9,13 @@ if (esta_logueado()) {
 }
 
 $titulo_pagina    = 'Crear cuenta';
-$meta_descripcion = 'Crea tu cuenta gratis en ShopPeruvian y compra ropa, figuras y accesorios anime.';
+$meta_descripcion = 'Crea tu cuenta gratis en Anime Store y compra ropa, figuras y accesorios anime.';
 require_once ROOT_PATH . '/includes/header.php';
 ?>
 
 <div class="sp-auth-page">
     <div class="sp-auth-card">
-        <div class="sp-modal-logo">SHOP<span>ANIME</span></div>
+        <div class="sp-modal-logo">ANIME<span>STORE</span></div>
         <p class="sp-auth-sub">Crea tu cuenta en menos de un minuto</p>
 
         <form action="<?= BASE_URL ?>/api/auth.php" method="POST" id="registroPageForm">

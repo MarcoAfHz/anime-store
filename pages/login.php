@@ -10,13 +10,13 @@ if (esta_logueado()) {
 }
 
 $titulo_pagina    = 'Iniciar sesión';
-$meta_descripcion = 'Accede a tu cuenta de ShopPeruvian para ver tus pedidos y tu lista de deseos.';
+$meta_descripcion = 'Accede a tu cuenta de Anime Store para ver tus pedidos y tu lista de deseos.';
 require_once ROOT_PATH . '/includes/header.php';
 ?>
 
 <div class="sp-auth-page">
     <div class="sp-auth-card">
-        <div class="sp-modal-logo">SHOP<span>ANIME</span></div>
+        <div class="sp-modal-logo">ANIME<span>STORE</span></div>
         <p class="sp-auth-sub">Inicia sesión para continuar con tu compra</p>
 
         <form action="<?= BASE_URL ?>/api/auth.php" method="POST" id="loginPageForm">

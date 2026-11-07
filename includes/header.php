@@ -52,7 +52,7 @@ $menu_iconos     = ['bi-tags', 'bi-emoji-smile', 'bi-bag', 'bi-award', 'bi-stars
 
         <!-- Logo -->
         <a href="<?= BASE_URL ?>" class="sp-logo">
-            SHOP<span>ANIME</span>
+            ANIME<span>STORE</span>
         </a>
 
         <!-- Links -->
@@ -133,7 +133,7 @@ $menu_iconos     = ['bi-tags', 'bi-emoji-smile', 'bi-bag', 'bi-award', 'bi-stars
     <!-- Menú drawer derecha -->
     <div class="sp-drawer" id="mobileMenu">
         <div class="sp-drawer-header">
-            <span class="sp-logo">SHOP<span>ANIME</span></span>
+            <span class="sp-logo">ANIME<span>STORE</span></span>
             <button onclick="toggleMenu()" class="sp-drawer-close">
                 <i class="bi bi-x-lg"></i>
             </button>
@@ -170,7 +170,7 @@ $menu_iconos     = ['bi-tags', 'bi-emoji-smile', 'bi-bag', 'bi-award', 'bi-stars
 
         <!-- Formulario Login -->
         <div id="formLogin">
-            <div class="sp-modal-logo">SHOP<span>ANIME</span></div>
+            <div class="sp-modal-logo">ANIME<span>STORE</span></div>
             <form action="<?= BASE_URL ?>/api/auth.php" method="POST" id="loginForm">
                 <input type="hidden" name="accion" value="login">
                 <?= csrf_campo() ?>
@@ -197,7 +197,7 @@ $menu_iconos     = ['bi-tags', 'bi-emoji-smile', 'bi-bag', 'bi-award', 'bi-stars
 
         <!-- Formulario Registro -->
         <div id="formRegistro" style="display:none">
-            <div class="sp-modal-logo">SHOP<span>ANIME</span></div>
+            <div class="sp-modal-logo">ANIME<span>STORE</span></div>
             <form action="<?= BASE_URL ?>/api/auth.php" method="POST" id="registroForm">
                 <input type="hidden" name="accion" value="registro">
                 <?= csrf_campo() ?>

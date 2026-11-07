@@ -1,6 +1,6 @@
 <?php
 $titulo_pagina    = 'Términos y condiciones';
-$meta_descripcion = 'Términos y condiciones de compra en ShopPeruvian: pedidos, pagos con Yape o efectivo, envíos y devoluciones.';
+$meta_descripcion = 'Términos y condiciones de compra en Anime Store: pedidos, pagos con Yape o efectivo, envíos y devoluciones.';
 require_once dirname(__DIR__) . '/includes/header.php';
 ?>
 

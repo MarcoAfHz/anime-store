@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.4.3, for Win64 (x86_64)
 --
--- Host: localhost    Database: shop_peruvian
+-- Host: localhost    Database: anime_store
 -- ------------------------------------------------------
 -- Server version	8.4.3
 
@@ -439,7 +439,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,NULL,'Administrador','admin@shopperuvian.com','$2a$12$i5Haj9PVlBPVt6tWyxE95eK8096f1JvPmMqI2BilEYjN2B2BgbVi6',NULL,NULL,'admin',1,'2026-05-18 09:44:52');
+INSERT INTO `usuarios` VALUES (1,NULL,'Administrador','admin@animestore.pe','$2a$12$i5Haj9PVlBPVt6tWyxE95eK8096f1JvPmMqI2BilEYjN2B2BgbVi6',NULL,NULL,'admin',1,'2026-05-18 09:44:52');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -474,7 +474,7 @@ INSERT INTO `wishlist` VALUES (1,1,1,'2026-05-28 01:57:30');
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'shop_peruvian'
+-- Dumping routines for database 'anime_store'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

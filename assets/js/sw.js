@@ -1,8 +1,8 @@
-// ── SERVICE WORKER — ShopPeruvian ──────────────────────────────
+// ── SERVICE WORKER — Anime Store ──────────────────────────────
 // Red primero: siempre muestra datos frescos (precios, stock, carrito).
 // Si no hay conexión, muestra la última versión guardada de la página.
 
-const CACHE = 'shopperuvian-v1';
+const CACHE = 'animestore-v1';
 
 self.addEventListener('install', () => self.skipWaiting());
 

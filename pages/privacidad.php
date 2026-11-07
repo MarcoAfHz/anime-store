@@ -1,6 +1,6 @@
 <?php
 $titulo_pagina    = 'Política de privacidad';
-$meta_descripcion = 'Cómo ShopPeruvian trata y protege tus datos personales conforme a la Ley N.º 29733.';
+$meta_descripcion = 'Cómo Anime Store trata y protege tus datos personales conforme a la Ley N.º 29733.';
 require_once dirname(__DIR__) . '/includes/header.php';
 ?>
 

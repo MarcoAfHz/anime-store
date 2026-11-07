@@ -1,6 +1,6 @@
 <?php
 $titulo_pagina    = 'Inicio';
-$meta_descripcion = 'ShopPeruvian — Importaciones anime y urban style. Ropa, figuras y accesorios exclusivos con envíos a todo Perú.';
+$meta_descripcion = 'Anime Store — Importaciones anime y urban style. Ropa, figuras y accesorios exclusivos con envíos a todo Perú.';
 require_once 'includes/header.php';
 
 $conn = conectar();

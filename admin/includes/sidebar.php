@@ -1,6 +1,6 @@
 <aside class="sp-admin-sidebar">
     <div class="sp-admin-logo">
-        <a href="<?= BASE_URL ?>/admin">SHOP<span>PERUVIAN</span></a>
+        <a href="<?= BASE_URL ?>/admin">ANIME<span>STORE</span></a>
         <small>Panel Admin</small>
     </div>
 
